@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>行事曆</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css'/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="wrap">
+        <div class="container mt-5 mb-5">
+            <div class="row">
+                <div class="col-10 mx-auto">
+                    <h1>校園行事曆</h1>
+                    <div id="calList">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="chk_Default" value="各個Google日曆連結網址" checked="checked">
+                            <label class="form-check-label" for="chk_Default">全部</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="chk_Student" value="Google日曆連結網址">
+                            <label class="form-check-label" for="chk_Student">學生行事曆</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="chk_Teacher" value="Google日曆連結網址">
+                            <label class="form-check-label" for="chk_Teacher">教師行事曆</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="chk_Screening" value="Google日曆連結網址">
+                            <label class="form-check-label" for="chk_Screening">大學甄試入學</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="chk_Training" value="Google日曆連結網址">
+                            <label class="form-check-label" for="chk_Training">教育訓練</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <a class="btn btn-primary" href="javascript:;" onclick="showCalendar();">確定</a>
+                        </div>
+                    </div>
+                    <div class="embed-responsive embed-responsive-16by9 mt-5">
+                        <iframe class="embed-responsive-item" id="ifCal" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FTaipei&amp;各個Google日曆連結網址"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
